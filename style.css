@@ -1,0 +1,838 @@
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	box-sizing: border-box;
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing: border-box;
+	font-size: 0;
+}
+html,
+body {
+	height: 100%;
+	width: 100%;
+	font-family: 'Roboto',	sans-serif;
+	margin: 0 auto;
+}
+.wrapper{
+	margin: 0 auto;
+	width: 100%;
+	min-height: 100%;
+}
+.container_hh {
+	max-width: 2390px;
+	margin: 0 auto;	
+}
+
+header {
+	width: 100%;
+	background-color: #2f3338;
+}
+.header_block{
+	width: 100%;
+	height: 100vh;
+	padding: 4.7% 0 8% 0;
+	margin: 0 auto;
+}
+.header_logo {
+	height: calc(126px - 126 * ((2433px - 100vh) / 2433));
+}
+.header_logo div {
+	height: 100%;
+	width: auto;
+}
+.header_logo img {
+	height: 100%;
+	width: auto;
+}
+.header_image {
+	display: flex;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	align-items: center;
+	-webkit-align-items: center;
+	justify-content: center;
+	padding-top: calc(173px - 173 * ((2433px - 100vh) / 2433));
+	padding-bottom: calc(86px - 86 * ((2433px - 100vh) / 2433));
+}
+.header_image_img{
+	width: 100%;
+	height: calc(560px - 560 * ((2433px - 100vh) / 2433));
+	max-height: 560px;
+	background-image: url("image/Contact_Icon.png");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: contain;
+}
+
+	
+/*----------------- form ------------*/
+
+.header_form {
+	height: calc(1178px - 1178 * ((2433px - 100vh) / 2433));
+}
+form {
+	height: inherit;
+	display: flex;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	flex-wrap: wrap;
+	align-content: space-between;
+}
+.header_form label{
+	/* font-size: 70px; рассчет в зависимости от ширины экрана*/
+	font-size: calc(24px + 46 * (100vw/3360));
+	color: #d7d7d7;
+	font-weight: 500;
+}
+
+.header_form span {
+	color: #be393b;
+	/* font-size: 86px; рассчет в зависимости от ширины экрана*/
+	font-size: calc(30px + 56 * (100vw/3360));
+}
+.form_cliet {
+	display: flex;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	flex-wrap: wrap;
+	align-content: space-between;	
+}
+form .form_cliet_one,
+ form .form_cliet_two {
+	width: 50%;
+	height: inherit;
+}
+.form_cliet_one {
+	padding-right: calc(248px - 248 * ((3360px - 100vw) / 3360));
+	display: flex;
+	flex-wrap: wrap;
+}
+ .form_cliet_two {
+	padding-left: calc(52px - 52 * ((3360px - 100vw) / 3360));
+	display: flex;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	flex-wrap: wrap;
+	align-content: space-between;
+}
+.form_cliet_two div {
+	width: 100%;
+}
+#form_name,
+#form_email,
+#form_message {
+	border-radius: 10px;
+	background-color: transparent;
+	border: 3px solid rgba(255, 255, 255, 0.52);
+	/* font-size: 70px; рассчет в зависимости от ширины экрана*/
+	font-size: calc(24px + 36 * (100vw/3360));
+	color: #d7d7d7;
+	font-weight: 400;
+	/*padding: 65px 75px;*/
+	padding-top: calc(65px - 65 * ((2433px - 100vh) / 2433));
+	padding-bottom: calc(65px - 65 * ((2433px - 100vh) / 2433));
+	padding-left: calc(52px - 75 * ((3360px - 100vw) / 3360));
+	padding-right: calc(52px - 75 * ((3360px - 100vw) / 3360));
+}
+#form_name{
+	width: 100%;
+	height: calc(194px - 194 * ((2433px - 100vh) / 2433));
+	margin-bottom: calc(163px - 163 * ((2433px - 100vh) / 2433));
+}
+#form_email{
+	width: 100%;
+	height: calc(194px - 194 * ((2433px - 100vh) / 2433));
+}
+.form_cliet_two #form_message {
+	width: 100%;
+	height: calc(667px - 667 * ((2433px - 100vh) / 2433));
+	resize: none;
+	
+}
+#form_name:hover,
+#form_email:hover,
+#form_message:hover {
+	background-color: #2f3136;
+	border: 3px solid rgba(190, 57, 59, 0.49);
+}
+.form_cliet_button{
+	width: 100%;
+	display: flex;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	justify-content: flex-end;
+}
+#form_button {
+	width: calc(461px - 461 * ((3360px - 100vw) / 3360));
+	height: calc(185px - 185 * ((2433px - 100vh) / 2433));
+	border-radius: 10px;
+	background-color: #be393b;
+	box-shadow: 4px 6px  #661c1d;
+	cursor: pointer;
+	color: #ffffff;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.header_form #button_p {
+	color: #ffffff;
+	text-align: center;
+	width: 100%;
+	/* font-size: 72px; рассчет в зависимости от ширины экрана*/
+	font-size: calc(24px + 48 * (100vw/3358));
+	line-height: 100%;
+	font-weight: 700;
+	background-color: inherit;
+	margin: 0;
+}
+#form_button:hover{
+	background-color: #992b2d;
+	box-shadow: 3px 5px #3d1717;
+}
+#form_button:active {
+	background-color: #992b2d;
+	box-shadow: none;
+	transform: translateX(5px) translateY(3px);
+	-webkit-transform: translateX(5px) translateY(3px);
+	-moz-transform: translateX(5px) translateY(3px);
+}
+ /*------------- блок с cards------------*/
+
+.main {
+	width: 100%;
+	height: auto;
+	padding-top: calc(286px - 286 * ((2433px - 100vh) / 2433));
+	
+}
+.main h2 {
+	/* font-size: 86px; рассчет в зависимости от ширины экрана*/
+	font-size: calc(30px + 56 * (100vw/3360));
+	color: #37414e;
+	font-weight: 500;
+	text-align: center;
+}
+.main_block {
+	margin: 0 auto;
+	width: 100%;
+	padding-top: calc(283px - 283 * ((2433px - 100vh) / 2433));
+	padding-bottom: calc(270px - 270 * ((2433px - 100vh) / 2433));
+}
+.main_block .main_block_grid {
+	/*height: 827px;*/
+	padding: calc(67px - 67 * ((3360px - 100vw) / 3360));
+	height: calc(827px - 827 * ((2433px - 100vh) / 2433));
+}
+.row {
+	margin-left: 0;
+	margin-right: 0;	
+}
+
+.card-body {
+	position: relative;
+}
+.card-body div {
+	position: absolute;
+	z-index: -1;
+	color: inherit;
+}
+.card-title {
+	width: 100%;
+	/* font-size: 68px; рассчет в зависимости от ширины экрана*/
+	font-size: calc(30px + 38 * (100vw/3360));
+	color: #ffffff;
+	font-weight: 500;
+	display: flex;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	align-items: center;
+	-webkit-align-items: center;
+	-ms-align-items: center;
+	justify-content: center;
+	border-radius: 5px;
+	overflow: hidden;
+	
+}
+.main_block_email {
+	width: 100%;
+	/* font-size: 68px; рассчет в зависимости от ширины экрана*/
+	font-size: calc(30px + 38 * (100vw/3360));
+	color: #6d737b;
+	font-weight: 700;
+	display: flex;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	align-items: center;
+	-webkit-align-items: center;
+	-ms-align-items: center;
+	justify-content: center;
+	word-wrap: break-word;
+}
+.main_block_p {
+	width: 100%;
+	height: 647px;
+	/* font-size: 60px; рассчет в зависимости от ширины экрана*/
+	font-size: calc(30px + 30 * (100vw/3360));
+	color: #767582;
+	font-weight: 500;
+	
+}
+
+/* -------- footer -------*/
+
+footer {
+	height: calc(289px - 289 * ((2433px - 100vh) / 2433));
+	width: 100%;
+	background-color: #2f3338;
+	padding-top: calc(75px - 75 * ((2433px - 100vh) / 2433));
+	padding-bottom: calc(114px - 114 * ((2433px - 100vh) / 2433));
+}
+.footer_block {
+	display: flex;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	justify-content: space-between;
+}
+
+.footer_logo div {
+	width: auto;
+	height: calc(100px - 100 * ((2433px - 100vh) / 2433));
+}
+.footer_logo img {
+	width: auto;
+	height: 100%;
+}
+.footer_contact{
+	display: flex;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+}
+.vk,
+.fb {
+	width: auto;
+	height: calc(89px - 89 * ((2433px - 100vh) / 2433));
+	margin: 0 50px;
+}
+.vk img,
+.fb img {
+	height: 100%;
+}
+
+
+/*------ стили для Квадратной области просмотра  -------*/
+
+/* 3360/2433  - 1.381011*/
+@media (min-aspect-ratio: 1/1) and (max-aspect-ratio: 3360/2433) and (max-width: 2560px) {
+	.container_hh {
+		max-width: 1960px;
+	}
+	#form_button {
+		width: calc((461px - 461 * ((3360px - 100vw) / 3360)) + 30px );
+		height: calc(185px - 185 * ((2433px - 100vh) / 2433) + 30px);
+	}
+}
+@media (min-aspect-ratio: 1/1) and (max-aspect-ratio: 3360/2433) and (max-width: 2100px) {
+	.container_hh {
+		max-width: 1700px;
+	}
+	
+}
+@media (min-aspect-ratio: 1/1) and (max-aspect-ratio: 3360/2433) and (max-width: 1800px) {
+	.container_hh {
+		max-width: 1440px;
+	}
+}
+@media (min-aspect-ratio: 1/1) and (max-aspect-ratio: 3360/2433) and (max-width: 1500px) {
+	.container_hh {
+		max-width: 1200px;
+	}
+	#form_button {
+		width: calc((461px - 461 * ((3360px - 100vw) / 3360)) + 40px);
+		height: calc(185px - 185 * ((2433px - 100vh) / 2433) + 15px);
+	}
+	
+}
+@media (min-aspect-ratio: 1/1) and (max-aspect-ratio: 3360/2433) and (max-width: 1440px) {
+	.container_hh {
+		max-width: 1140px;
+	}
+	#form_button {
+		width: calc((461px - 461 * ((3360px - 100vw) / 3360)) + 40px);
+		height: calc(185px - 185 * ((2433px - 100vh) / 2433));
+	}
+	.header_form #button_p {
+		font-size: calc(24px + 48 * (100vw/3360));
+		font-weight: 500;
+		margin: 0;
+	}
+}
+@media (min-aspect-ratio: 1/1) and (max-aspect-ratio: 3360/2433) and (max-width: 1200px) {
+	.container_hh {
+		max-width: 998px;
+	}
+	.header_image {
+		padding-top: calc(173px - 173 * ((2433px - 100vh) / 2433) - 20px);
+		padding-bottom: calc(86px - 86 * ((2433px - 100vh) / 2433));
+	}
+	#form_button {
+		width: calc((461px - 461 * ((3360px - 100vw) / 3360)) + 40px);
+		height: calc(185px - 185 * ((2433px - 100vh) / 2433));
+	}
+	.header_form #button_p {
+		font-size: calc(24px + 48 * (100vw/3358));
+		font-weight: 500;
+		margin: 0;
+	}
+	
+}
+@media (min-aspect-ratio: 1/1) and (max-aspect-ratio: 3360/2433) and (max-width: 1050px) and (min-width: 997px) {
+	.container_hh {
+		max-width: 800px;
+	}
+	.header_image {
+		padding-top: calc(173px - 173 * ((2433px - 100vh) / 2433) - 20px);
+		padding-bottom: calc(86px - 86 * ((2433px - 100vh) / 2433));
+	}
+
+	#form_button {
+		width: calc((461px - 461 * ((3360px - 100vw) / 3360)) + 50px);
+		height: calc(185px - 185 * ((2433px - 100vh) / 2433) );
+	}
+	.header_form #button_p {
+		font-size: calc(24px + 48 * (100vw/3358));
+		font-weight: 500;
+		margin: 0;
+	}
+}
+
+/*----------- стили для прямоугольной области просмотра -------*/
+
+/**3361/2433 - 1.381422 */
+@media (min-aspect-ratio: 3361/2433) and (max-width: 3360px) {
+	.container_hh {
+		max-width: 2390px;
+		margin: 0 auto;
+	}
+	.header_logo {
+		height: 126px;
+	}
+}
+@media (min-aspect-ratio: 3361/2433) and (max-width: 2560px) {
+	.container_hh {
+		max-width: 1960px;
+	}
+	.header_block {
+		padding: 3% 0 5% 0;
+		margin: 0 auto;
+	}
+	.header_logo {
+		height: calc(126px - 126 * ((2433px - 100vh) / 2433));
+	}
+	.header_image {
+		padding-top: calc(50px - 50 * ((2433px - 100vh) / 2433));
+		padding-bottom: calc(30px - 30 * ((2433px - 100vh) / 2433));
+	}
+	/*------- form -------*/
+	
+	#form_name {
+		width: 100%;
+		height: calc(194px - 194 * ((2433px - 100vh) / 2433));
+		margin-bottom: calc(100px - 100 * ((2433px - 100vh) / 2433));
+	}
+	
+}
+@media (min-aspect-ratio: 3361/2433) and (max-width: 2100px) {
+	.container_hh {
+		max-width: 1700px;
+	}
+
+}
+@media (min-aspect-ratio: 3361/2433) and (max-width: 1800px) {
+	.container_hh {
+		max-width: 1440px;
+	}
+	#form_button {
+		width: calc((461px - 461 * ((3360px - 100vw) / 3360)) + 30px);
+		height: calc(185px - 185 * ((2433px - 100vh) / 2433));
+		margin-top: calc(30px - 30 * ((2433px - 100vh) / 2433));
+	}
+}
+@media (min-aspect-ratio: 3361/2433) and (max-width: 1500px) {
+	.container_hh {
+		max-width: 1200px;
+	}
+}
+@media (min-aspect-ratio: 3361/2433) and (max-width: 1440px) {
+	.container_hh {
+		max-width: 1140px;
+	}
+	#form_button {
+		width: calc((461px - 461 * ((3360px - 100vw) / 3360)) + 40px);
+		height: calc(185px - 185 * ((2433px - 100vh) / 2433));
+	}
+
+	.header_form #button_p {
+		font-size: calc(24px + 48 * (100vw/3360));
+		font-weight: 500;
+		margin: 0;
+	}
+}
+@media (min-aspect-ratio: 3361/2433) and (max-width: 1200px) {
+	.container_hh {
+		max-width: 998px;
+	}
+}
+@media (min-aspect-ratio: 3361/2433) and (max-width: 1024px) and (min-width: 997px) {
+	.container_hh {
+		max-width: 800px;
+	}
+} 
+
+
+/*----------- стили для планшетной вертикальной обалсти просмотра -------*/
+
+@media (min-aspect-ratio: 1/3) and (max-aspect-ratio: 1/1) and (min-width: 1441px) {
+	.container_hh {
+		width: calc(100vw - 200px);
+	}
+	.form_cliet_one {
+		padding-right: calc(165px - 165 * ((3360px - 100vw) / 3360));
+		
+	}
+
+	.form_cliet_two {
+		padding-left: calc(45px - 45 * ((3360px - 100vw) / 3360));
+	}
+}
+
+@media (min-aspect-ratio: 1/3) and (max-aspect-ratio: 1/1) and (max-width: 1440px) and (min-width: 997px) {
+	.container_hh {
+		width: calc(100vw - 100px);
+	}
+
+	#form_button {
+		width: calc((461px - 461 * ((3360px - 100vw) / 3360)) + 40px);
+		height: calc(185px - 185 * ((2433px - 100vh) / 2433));
+	}
+
+	.header_form #button_p {
+		font-size: calc(24px + 48 * (100vw/3360));
+		font-weight: 500;
+		margin: 0;
+	}
+
+
+	.header_block {
+		padding: 3% 0 6% 0;
+	}
+
+	.header_logo div {
+		text-align: center;
+	}
+
+	.header_image {
+		display: flex;
+		display: -webkit-flex;
+		display: -moz-flex;
+		display: -ms-flex;
+		align-items: center;
+		justify-content: center;
+		padding-top: calc(73px - 73 * ((2433px - 100vh) / 2433));
+		padding-bottom: calc(46px - 46 * ((2433px - 100vh) / 2433));
+	}
+
+	.header_image_img {
+		width: 100%;
+		height: calc(350px - 350 * ((2433px - 100vh) / 2433));
+	}
+
+	/*--------------- form --------------*/
+	.header_form {
+		/*height: calc(1178px - 1178 * ((2433px - 100vh) / 2433));*/
+		height: auto;
+	}
+
+	form {
+		height: inherit;
+		display: block;
+		margin: 0 auto;
+	}
+
+	.form_cliet {
+		display: block;
+		margin: 0 auto;
+		width: 80%;
+	}
+
+	form .form_cliet_one,
+	form .form_cliet_two {
+		width: 100%;
+		height: inherit;
+
+	}
+
+	.form_cliet_one {
+		padding-right: 0;
+		display: block;
+
+	}
+
+	.form_cliet_two {
+		padding-left: 0;
+		display: flex;
+		display: -webkit-flex;
+		display: -moz-flex;
+		display: -ms-flex;
+		flex-wrap: wrap;
+		align-content: center;
+	}
+
+	.header_form label {
+		/* font-size: 24px; рассчет в зависимости от ширины экрана*/
+		font-size: calc(24px + (46 + 46 * 0.7) * ((100vw - 320px) / 3360));
+	}
+
+	#form_name,
+	#form_email,
+	#form_message {
+		/* font-size: 22px; рассчет в зависимости от ширины экрана*/
+		font-size: calc(22px + (36 + 36 * 0.7) * ((100vw - 320px) / 3360));
+		line-height: 28px;
+		padding-top: calc(65px - 65 * ((2433px - 100vh) / 2433));
+		padding-bottom: calc(65px - 65 * ((2433px - 100vh) / 2433));
+		padding-left: calc(52px - 75 * ((3360px - 100vw) / 3360));
+		padding-right: calc(52px - 75 * ((3360px - 100vw) / 3360));
+		margin-bottom: 15px;
+	}
+
+	.header_form span {
+		/* font-size: 30px; рассчет в зависимости от ширины экрана*/
+		font-size: calc(30px + (56 + 56* 0.7) * ((100vw - 320px) / 3360));
+	}
+
+	#form_name {
+		width: 100%;
+		height: calc(94px - 94 * ((2433px - 100vh) / 2433));
+		margin-bottom: 15px;
+	}
+
+	#form_email {
+		width: 100%;
+		height: calc(94px - 94 * ((2433px - 100vh) / 2433));
+	}
+
+	.form_cliet_two #form_message {
+		width: 100%;
+		height: calc(400px - 400 * ((2433px - 100vh) / 2433));
+		resize: none;
+	}
+
+	.form_cliet_button {
+		justify-content: center;
+	}
+
+	#form_button {
+		width: 80%;
+		height: calc(185px - 185 * ((2433px - 100vh) / 2433));
+	}
+
+	.header_form #button_p {
+		/* font-size: 36px; рассчет в зависимости от ширины экрана*/
+		font-size: calc(22px + (36 + 36 * 0.7) * ((100vw - 320px) / 3360));
+		margin: 0;
+	}
+
+	/*-------------- mobile block with cards -------------*/
+	.main h2 {
+		/* font-size: 86px; рассчет в зависимости от ширины экрана*/
+		font-size: calc(30px + (56 + 56* 0.7) * ((100vw - 320px) / 3360));
+		margin-top: 50px;
+		margin-bottom: 50px;
+	}
+
+	.main_block_title {
+		/* font-size: 68px; рассчет в зависимости от ширины экрана*/
+
+		font-size: calc(30px + (38 + 38* 0.7) * ((100vw - 320px) / 3360));
+	}
+
+	.main_block_email {
+		/* font-size: 68px; рассчет в зависимости от ширины экрана*/
+
+		font-size: calc(30px + (38 + 38* 0.7) * ((100vw - 320px) / 3360));
+	}
+
+	.main_block_p {
+		/* font-size: 60px; рассчет в зависимости от ширины экрана*/
+
+		font-size: calc(30px + (30 + 30 * 0.7) * ((100vw - 320px) / 3360));
+	}
+
+	/*-------- mobile footer -----------*/
+	.vk,
+	.fb {
+		margin: 0 20px;
+	}
+}
+
+
+
+
+/*----------------------- mobile -------------------*/
+
+@media (max-width: 998px) {
+	.container_hh {
+		width: calc(100vw - 50px);
+		
+	}
+	.header_block {
+		padding: 3% 0 6% 0;
+	}
+	.header_logo div {
+		text-align: center;
+	}
+	.header_image {
+		display: flex;
+		display: -webkit-flex;
+		display: -moz-flex;
+		display: -ms-flex;
+		align-items: center;
+		justify-content: center;
+		padding-top: calc(73px - 73 * ((2433px - 100vh) / 2433));
+		padding-bottom: calc(46px - 46 * ((2433px - 100vh) / 2433));
+	}
+
+	.header_image_img {
+		width: 100%;
+		height: calc(350px - 350 * ((2433px - 100vh) / 2433));
+	}
+/*--------------- form mobile --------------*/
+	.header_form {
+		/*height: calc(1178px - 1178 * ((2433px - 100vh) / 2433));*/
+		height: auto;
+	}
+	form {
+		height: inherit;
+		display: block;
+		margin: 0 auto;
+	}
+	.form_cliet {
+		display: block;
+		margin: 0 auto;
+		width: 80%;
+	}
+	form .form_cliet_one,
+	form .form_cliet_two {
+		width: 100%;
+		height: inherit;
+		
+	}
+
+	.form_cliet_one {
+		padding-right: 0;
+		display: block;
+		
+	}
+
+	.form_cliet_two {
+		padding-left: 0;
+		display: flex;
+		display: -webkit-flex;
+		display: -moz-flex;
+		display: -ms-flex;
+		flex-wrap: wrap;
+		align-content: center;
+	}
+	.header_form label {
+		/* font-size: 24px; рассчет в зависимости от ширины экрана*/
+		font-size: calc(24px + (46 + 46 * 0.7) * ((100vw - 320px) / 3360));
+	}
+	#form_name,
+	#form_email,
+	#form_message {
+		/* font-size: 22px; рассчет в зависимости от ширины экрана*/
+		font-size: calc(22px + (36 + 36 * 0.7) * ((100vw - 320px) / 3360));
+		line-height: 28px;
+		padding-top: calc(65px - 65 * ((2433px - 100vh) / 2433));
+		padding-bottom: calc(65px - 65 * ((2433px - 100vh) / 2433));
+		padding-left: calc(52px - 75 * ((3360px - 100vw) / 3360));
+		padding-right: calc(52px - 75 * ((3360px - 100vw) / 3360));
+		margin-bottom: 15px;
+	}
+
+	.header_form span {
+		/* font-size: 30px; рассчет в зависимости от ширины экрана*/
+		font-size: calc(30px + (56 + 56* 0.7) * ((100vw - 320px) / 3360));
+	}
+	
+	#form_name {
+		width: 100%;
+		height: calc(94px - 94 * ((2433px - 100vh) / 2433));
+		margin-bottom: 15px;
+	}
+
+	#form_email {
+		width: 100%;
+		height: calc(94px - 94 * ((2433px - 100vh) / 2433));
+	}
+
+	.form_cliet_two #form_message {
+		width: 100%;
+		height: calc(400px - 400 * ((2433px - 100vh) / 2433));
+		resize: none;
+	}
+
+	.form_cliet_button {
+		justify-content: center;
+	}
+
+	#form_button {
+		width: 80%;
+		height: calc(185px - 185 * ((2433px - 100vh) / 2433));
+	}
+	.header_form #button_p {
+		/* font-size: 36px; рассчет в зависимости от ширины экрана*/
+		font-size: calc(22px + (36 + 36 * 0.7) * ((100vw - 320px) / 3360));
+		margin: 0;
+	}
+/*-------------- mobile block with cards -------------*/
+	.main h2 {
+		/* font-size: 86px; рассчет в зависимости от ширины экрана*/
+		font-size: calc(30px + (56 + 56* 0.7) * ((100vw - 320px) / 3360));
+		margin-top: 50px;
+		margin-bottom: 50px;
+	}
+	.main_block_title {
+		/* font-size: 68px; рассчет в зависимости от ширины экрана*/
+		
+		font-size: calc(30px + (38 + 38* 0.7) * ((100vw - 320px) / 3360));
+	}
+
+	.main_block_email {
+		/* font-size: 68px; рассчет в зависимости от ширины экрана*/
+		
+		font-size: calc(30px + (38 + 38* 0.7) * ((100vw - 320px) / 3360));
+	}
+
+	.main_block_p {
+		/* font-size: 60px; рассчет в зависимости от ширины экрана*/
+		
+		font-size: calc(30px + (30 + 30 * 0.7) * ((100vw - 320px) / 3360));
+	}
+
+/*-------- mobile footer -----------*/	
+	.vk,
+	.fb {
+		margin: 0 20px;
+	}
+
+}
