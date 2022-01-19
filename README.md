@@ -1,4 +1,4 @@
 Адаптив;
 Отправка данных в БД;
 (Для демострации работы необходимо импортировать таблицу 'cards' в БД).
-/HTML,CSS,JS,jQuery,PHP/
+/HTML,CSS,Bootstrap,JS,jQuery,PHP/
